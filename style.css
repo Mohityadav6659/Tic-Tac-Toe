@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #030ea8;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* box-shadow: inset -100px -50px 300px -60px white; */
+}
+
+/* info */
+.info {
+  color: white;
+  word-spacing: 3px;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.info i {
+  color: yellow;
+}
+
+/* description */
+.description {
+  width: 30%;
+  /* background-color: aqua; */
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  padding-top: 2rem;
+  transition: 0.3s transform ease-in-out 0s;
+}
+
+.title:hover {
+  transform: translateY(-4px);
+}
+
+.rules-btn {
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 1rem 0rem;
+}
+
+.rules-btn:hover {
+  background-color: #3e8e41;
+}
+
+.rules {
+  opacity: 0;
+  font-size: 1.2rem;
+}
+
+.rules b:hover {
+  text-decoration: underline;
+}
+
+/* play area */
+.play-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  background-color: rgba(255, 255, 255, 0.281);
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  background-color: #030ea8;
+  color: rgba(4, 4, 241, 0.755);
+
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.orange {
+  color: #998477;
+}
+
+.cell:hover {
+  opacity: 0.8;
+}
+
+.reset-btn {
+  margin: 4px auto;
+  font-size: 1rem;
+  background-color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+}
+
+.reset-btn:hover {
+  background-color: #3e8e41;
+}
+
+#message {
+  align-self: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
